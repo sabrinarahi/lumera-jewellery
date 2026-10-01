@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Luméra Collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="category.css">
+</head>
+<body>
+<header><a class="brand" href="index.html">LUMÉRA</a><nav><a href="index.html#collections">All Collections</a><a href="category.html?cat=rings">Rings</a><a href="category.html?cat=necklaces">Necklaces</a><a href="category.html?cat=bracelets">Bracelets</a></nav></header>
+
+<section class="category-hero">
+  <a class="back" href="index.html#collections">← Back to 3D Collections</a>
+  <p class="eyebrow" id="categoryEyebrow">COLLECTION</p>
+  <h1 id="categoryTitle">Rings</h1>
+  <p id="categoryDesc">Explore all currently available pieces.</p>
+</section>
+
+<section class="catalog">
+  <div class="catalog-top">
+    <div class="tabs" id="tabs"></div>
+    <div class="summary"><span>Available styles</span><strong id="styleCount">0</strong></div>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div class="sold-note" id="soldNote" hidden>Some pieces are sold out and automatically hidden from this page.</div>
+</section>
+
+<div class="modal" id="modal">
+  <div class="modal-bg" data-close></div>
+  <div class="modal-card">
+    <button class="close" data-close>×</button>
+    <img id="mImg" alt="">
+    <div><p class="eyebrow" id="mType"></p><h2 id="mName"></h2><p id="mDesc"></p>
+    <div class="row"><span>Price</span><strong id="mPrice"></strong></div>
+    <div class="row"><span>Stock</span><strong id="mStock"></strong></div>
+    <label>Quantity<input id="mQty" type="number" min="1" value="1"></label>
+    <p id="mMsg"></p><button class="btn" id="buyBtn">Complete Demo Purchase</button></div>
+  </div>
+</div>
+
+<footer><a class="brand" href="index.html">LUMÉRA</a><p>Fine jewellery for a quieter kind of luxury.</p></footer>
+<script src="data.js"></script><script src="category.js"></script>
+</body></html>

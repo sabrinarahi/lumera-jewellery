@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Luméra | Cinematic 3D Jewellery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scroll-progress"><span id="scrollProgress"></span></div>
+
+<header class="main-header" id="mainHeader">
+  <a class="brand" href="#intro">LUMÉRA</a>
+  <span class="edition">DIGITAL ATELIER / 26</span>
+  <nav class="nav">
+    <a href="#intro">Experience</a>
+    <a href="#collections">Collections</a>
+    <a href="category.html?cat=rings">Rings</a>
+    <a href="category.html?cat=necklaces">Necklaces</a>
+    <a href="category.html?cat=bracelets">Bracelets</a>
+  </nav>
+  <button id="motionBtn" class="motion-btn" type="button">Pause motion</button>
+</header>
+
+<!-- CINEMATIC INTRO -->
+<section class="cinematic" id="intro">
+  <div class="cinematic-stage" aria-hidden="true">
+    <div class="ambient a1"></div>
+    <div class="ambient a2"></div>
+
+    <div class="visual-world">
+      <div class="halo"></div>
+      <div class="cinematic-object" id="cinematicObject">
+        <div class="object-face">
+          <img id="cinematicImage" src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&q=90" alt="">
+          <div class="shine"></div>
+        </div>
+      </div>
+      <div class="orbital orbital-a"></div>
+      <div class="orbital orbital-b"></div>
+    </div>
+
+    <div class="giant-type" id="giantType">LUMÉRA</div>
+    <div class="scene-counter" id="sceneCounter">SCENE 01 · 00%</div>
+  </div>
+
+  <div class="cinematic-scenes">
+    <section class="cinematic-scene intro-scene" data-scene="0">
+      <div class="scene-copy left">
+        <p class="eyebrow">THE DIGITAL ATELIER</p>
+        <h1>Jewellery<br>that <em>moves.</em></h1>
+        <p>A premium shopping experience that begins like a short film, then opens into a real jewellery store.</p>
+        <a class="pill-link" href="#cinematic-2">Scroll to enter ↓</a>
+      </div>
+    </section>
+
+    <section class="cinematic-scene" id="cinematic-2" data-scene="1">
+      <div class="scene-copy right">
+        <p class="eyebrow">01 · THE OBJECT</p>
+        <h2>It arrives.<br>It turns. It shines.</h2>
+        <p>The product reacts to scroll with depth, rotation, scale and changing light.</p>
+      </div>
+    </section>
+
+    <section class="cinematic-scene" data-scene="2">
+      <div class="scene-copy left">
+        <p class="eyebrow">02 · MATERIAL</p>
+        <h2>Light becomes<br>part of the design.</h2>
+        <p>Ring, necklace and bracelet visuals transform as the customer moves through the story.</p>
+      </div>
+    </section>
+
+    <section class="cinematic-scene final-scene" data-scene="3">
+      <div class="scene-copy center">
+        <p class="eyebrow">03 · ENTER THE STORE</p>
+        <h2>Now choose<br>your collection.</h2>
+        <p>The cinematic introduction ends here. The full interactive store begins below.</p>
+        <a class="pill-link light" href="#collections">Explore 3D Collections ↓</a>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- ORIGINAL MULTIPAGE 3D COLLECTION -->
+<section class="collection-section" id="collections">
+  <div class="collection-intro">
+    <p class="eyebrow">3D COLLECTIONS</p>
+    <h2>Move side to side.</h2>
+    <p>Drag, swipe or use the arrows. Click a jewellery family to open its dedicated product page.</p>
+  </div>
+
+  <div class="orbit-wrap" id="orbitWrap" tabindex="0" aria-label="3D jewellery collections">
+    <div class="orbit-glow"></div>
+    <div class="orbit-stage" id="orbitStage"></div>
+    <div class="orbit-core"><span>L</span><small>COLLECTIONS</small></div>
+  </div>
+
+  <div class="orbit-controls">
+    <button id="prev" type="button" aria-label="Previous collection">←</button>
+    <div>
+      <strong id="collectionName">Rings</strong>
+      <span id="collectionCount">6 available pieces</span>
+    </div>
+    <button id="next" type="button" aria-label="Next collection">→</button>
+  </div>
+</section>
+
+<section class="store-bridge">
+  <p class="eyebrow">SHOP BY FAMILY</p>
+  <h2>Each collection opens into its own page.</h2>
+  <div class="store-links">
+    <a href="category.html?cat=rings"><span>01</span><strong>Rings</strong><small>Open collection →</small></a>
+    <a href="category.html?cat=necklaces"><span>02</span><strong>Necklaces</strong><small>Open collection →</small></a>
+    <a href="category.html?cat=bracelets"><span>03</span><strong>Bracelets</strong><small>Open collection →</small></a>
+  </div>
+</section>
+
+<footer>
+  <a class="brand" href="#intro">LUMÉRA</a>
+  <p>Fine jewellery for a quieter kind of luxury.</p>
+  <small>Cinematic introduction + multipage 3D collection demo</small>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
